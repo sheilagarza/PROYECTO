@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    position: relative;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    color: #303030;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color:#303030;
+    display: block;
+    font-weight: 600;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu.label {
+    cursor: pointer;
+    display: none;
+}
+
+/* Imagen derecha */
+.bg {
+    position: absolute;
+    width: 700px;
+    z-index: -1;
+    right: 0;
+}
+
+.header-info {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.header-txt {
+    width: 50%;
+    padding-right: 35px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: 600;
+    color: #303030;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.header-txt p {
+    font-size: 16px;
+    color: #545454;
+    margin-bottom: 35px;
+}
+
+.header-img {
+    width: 50%;
+}
+
+.header-img img {
+    width: 650px;
+}
+
+.nosotros {
+    position: relative;
+}
+
+/* Imagen izquierda */
+.bg-2 {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    z-index: -1;
+}
+
+.nosotros-info {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.nosotros-img {
+    width: 50%;
+}
+
+.nosotros-img img {
+    width: 550px;
+}
+
+.nosotros-txt {
+    width: 50%;
+}
+
+.nosotros-txt span {
+    font-size: 16px;
+    color: #303030;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.nosotros-txt h2 {
+    font-size: 45px;
+    color: #303030;
+    margin-bottom: 30px;
+}
+
+.nosotros-txt p {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+/* FORMULARIO */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  .col-25 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+  }
+  
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+/* Borrar flotantes después de las columnas  */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+.products {
+    padding: 80px 0;
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+.footer{
+    padding: 100px 0;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link h3 {
+    font-size: 20px;
+    color: #303030;
+    margin-bottom: 20px;
+}
+
+.socials img {
+    margin-right: 15px;
+}
+
+.link ul li a {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+    color: #545454;
+}
+
+@media(max-width: 991px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label {
+        display: initial;
+    }
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #303030;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    .menu .navbar ul li a {
+        color: #ffffff;
+    }
+
+    .menu .navbar ul li a:hover {
+        color: #bebebe;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .bg {
+        width: 500px;
+    }
+
+    .header-info {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .header-txt {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .header-txt h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .header-img {
+        width: 100%;
+        text-align: center;
+        padding-top: 35px;
+    }
+
+    .header-img img {
+        width: 300px;
+    }
+
+    
+    .nosotros {
+        padding: 30px;
+        padding-top: 100px;
+    }
+
+    .bg-2 {
+        width: 200px;
+    }
+
+    .nosotros-info {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nosotros-img {
+        width: 100%;
+    }
+
+    .nosotros-img img {
+        width: 300px;
+    }
+
+    .nosotros-txt {
+        width: 100%;
+    }
+
+    .nosotros-txt h2 {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    /* formulario */
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+      }
+
+    .products {
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .socials {
+        margin-bottom: 25px;
+    }
+}

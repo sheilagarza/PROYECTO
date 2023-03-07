@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Canal de noticias Custoshoes</title>
+    <link>https://sheilagarza.github.io/Proyecto2/</link>
+    <description>Noticias de actualidad</description>
+    <item>
+      <title>Las zapatillas personalizadas que visten a Carolina Rodríguez o Víctor Claver </title>
+      <link>https://www.leonoticias.com/leon/zapatillas-personalizadas-visten-carolina-rodriguez-victor-claver-20220112113516-nt.html?ref=https%3A%2F%2Fwww.google.com%2F</link>
+      <description>Aquí podrás ver como el El tatuador leonés Gerardo Santos realiza diseños exclusivos en zapatillas deportivas</description>
+      <pubDate>Jueves, 17 Feb 2023 10:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Zapatillas personalizadas por Nike</title>
+      <link>https://www.nike.com/es/nike-by-you</link>
+      <description>Aquí podrás ver como nike personaliza las zapatillas </description>
+      <pubDate>Martes, 7 Marzo 2023 10:00:00 GMT</pubDate>
+      <image>
+        <url>https://static.nike.com/a/images/f_auto/dpr_1.0,cs_srgb/w_607,c_limit/adf0cb65-5f95-462e-8d9b-8f3a913cfbaf/image.png</url>
+        <title>Zapatillas personalizadas por Nike</title>
+        <link>https://www.nike.com/es/nike-by-you</link>
+      </image>
+    </item>
+  </channel>
+</rss>
